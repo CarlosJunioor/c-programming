@@ -23,12 +23,12 @@ int read_line(char *str)
 
 char *ft_rev_print(char *str)
 {
-    int endline;
-    endline = read_line(str);
-    while(endline >= 0)
+    int count;
+    count = read_line(str);
+    while(count >= 0)
     {
-        write(1, (str+endline), 1);
-        endline--;
+        write(1, (str+count), 1);
+        count--;
     }
     return(str);
 }
